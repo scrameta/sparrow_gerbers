@@ -1,0 +1,247 @@
+PCB PHOTOPLOTTER DEFINITION FILE
+GERBER 6000 / 6200 WITH ABSOLUTE IMPERIAL COORDINATES IN 5.3 FORMAT
+
+     PLOTTER DESCRIPTION
+     ===================
+
+MACHINE         GERBER  6000/6200 emulator or controller described in this file
+
+TYPE            PHOTOHEAD             photo plotter output only
+
+CODE            ASCII                 alternatives are ISO, EIA or EBCDIC
+
+UNITS           IMPERIAL              output is in 1/1000 inches      
+
+COORDINATES     ABSOLUTE              alternative is INCREMENTAL coords
+
+PRECEEDING      5                     Gerber coord format 5.3
+
+SUCCEEDING      3
+
+ZEROS           TRAILING              include trailing zeros only
+
+REPEATS         INCLUDE               omit any repeated coordinates
+
+GCOMMANDS       OMIT                  G commands not used by 6000 series
+
+INITIALISE      OMIT                  no initialisation required for 6000 
+
+PARAMETER       37                    parameter block identifier  %
+
+ENDBLOCK        42                    end of block character  *
+
+CRLF            INCLUDE               add CR/LF to the disc file
+
+TERMINATOR      M02                   end of program command for plotter
+
+BAUD            9600                  baud rate for On Line Plotter only
+
+STOPBITS        1                     also for on line plotting only
+
+VARIABLE        NO                    fixed length magnetic tape blocks
+
+BLOCKSIZE       256                   size of magnetic tape blocks
+
+CROSS           NO                    no splitting of commands across blocks
+
+FILL            0                     fill end of blocks with nulls
+
+XLOW            0                     define table size for plotting
+
+YLOW            0
+ 
+XHIGH           28000
+
+YHIGH           28000
+
+SYMBOLS         71                    number of apertures on the photohead
+
+
+             GERBER SYMBOL TABLE: PHOTOHEAD DISC 1
+             =====================================
+
+POSITION   SHAPE   USAGE   SIZE  ORIENT  LENGTH  COMMENT
+   10        1       B      55
+   11        2       B      55       
+   12        1       B      50                   
+   13        2       B      95              
+   14        1       B      75
+   15        2       B      75  
+   16        1       B      95
+   17        1       B     100
+   18        1       B     150 
+   19        1       B     157           MOIRE WITH CROSS 
+   20        1       B     250
+   21        1       B     315
+   22        1       B     200
+   23        2       B      70               
+   24        1       F     510    
+   25        2       B      50                                   
+   26        1       B      80                              
+   27        1       B       8 
+   28        1       B     120      
+   29        2       B      40        
+   30        1       F     170                         
+   31        1       B      12                         
+   32        2       F      20    
+   33        1       F      70    
+   34        1       F     270     
+   35        1       F     453     
+   36        1       B      60     
+   37        1       B     185     
+   38        2       F      35                      
+   39        1       B     158                    
+   40        2       F      15     
+   41        1       F     530     
+   42        1       B     335     
+   43        2       F      80 
+   44        1       B      40               
+   45        1       D      35               
+   46        1       F     177       MOIRE WITH CROSS
+   47        1       D      70               
+   48        1       D     315               
+   49        2       F      25               
+   50        1       D     138               
+   51        1       D     170                
+   52        1       F     130      
+   53        1       D     130      
+   54        3       F      50               
+   55        1       F     220               
+   56        2       F      60
+   57        1       D     110               
+   58        1       F     190                
+   59        1       F     195               
+   60        3       D      28               
+   61        2       F     110
+   62        1       F     433                  
+   63        1       F     125 
+   64        1       B      31
+   65        1       B      11               
+   66        2       B      11               
+   67        3       D      11
+   68        1       D     190
+   69        1       D       4
+   70        1       D      10
+   71        1       D      12
+   72        1       D      15
+   73        1       D      20
+   74        1       D      25
+   75        1       D      30
+   76        3       D       8
+   77        2       F      30           
+   78        1       F      165
+   79        2       F      100
+   80        1       D      32
+   
+              USER TEXT FONT DEFINITIONS
+              ==========================
+
+
+    1  160
+!   9  120 030 031 021 020 132 038 028 032
+"   4  126 038 136 048
+#   8  111 037 157 031 153 013 115 055
+$   16 102 011 051 062 063 054 014 005 006 017 057 066 148 040 120 028
+%   11 068 118 007 016 027 018 152 061 050 041 052
+&   11 160 016 017 028 037 036 003 001 010 030 063
+'   2  136 048
+(   4  130 023 025 038
+)   4  130 043 045 038
+*   6  122 046 126 042 114 054
++   4  132 036 114 054
+,   2  120 032
+-   2  114 054
+.   5  121 031 032 022 021
+/   2  110 058
+0   9  111 017 028 048 057 051 040 020 011
+1   5  110 050 130 038 015
+2   10 107 018 058 067 065 054 014 003 000 060
+3   13 101 010 050 061 063 054 024 107 018 058 067 065 054
+4   4  140 048 003 063
+5   9  101 010 050 061 063 054 004 008 068
+6   12 103 014 054 063 061 050 010 001 007 018 058 067
+7   2  068 008
+8   16 114 003 001 010 050 061 063 054 065 067 058 018 007 005 014 054
+9   12 101 010 050 061 067 058 018 007 005 014 054 065
+:   10 122 032 031 021 022 124 025 035 034 024
+;   7  120 032 134 035 025 024 034
+<   3  162 004 066
+=   4  113 053 155 015
+>   3  102 064 006
+?   15 106 007 018 058 067 065 054 044 033 032 131 030 020 021 031
+@   15 143 044 035 024 033 043 054 056 047 027 016 012 021 041 052
+A   4  038 060 123 043
+B   11 008 058 067 065 054 063 061 050 000 104 054
+C   8  167 058 018 007 001 010 050 061
+D   7  050 061 067 058 008 118 010
+E   6  160 000 008 068 144 004
+F   4  008 068 104 044
+G   10 167 058 018 007 001 010 050 061 063 043
+H   5  008 104 064 168 060
+I   6  110 050 130 038 118 058
+J   6  103 001 010 050 061 068
+K   5  008 168 002 135 060
+L   3  108 000 060
+M   4  008 034 068 060
+N   3  008 060 068
+O   9  101 007 018 058 067 061 050 010 001
+P   6  008 058 067 065 054 004
+Q   11 101 007 018 058 067 061 050 010 001 142 060
+R   8  008 058 067 065 054 004 144 060
+S   12 101 010 050 061 063 054 014 005 007 018 058 067
+T   4  130 038 108 068
+U   6  108 001 010 050 061 068
+V   3  108 030 068
+W   5  108 010 034 050 068
+X   3  068 108 060
+Y   5  130 034 008 168 034
+Z   4  108 068 000 060
+[   4  158 028 020 050
+\   2  118 050
+]   4  118 048 040 010
+
+
+             DRILL LETTER ASSOCIATION TABLE
+             ==============================
+
+POSITION   OFFSET   HEIGHT   SIZE   MIRROR
+   2         50       50      15      0
+
+   DRILL LIST
+   @   32     Drill for DIPS
+   A    1
+   B   10
+   C   12 
+   D   15
+   E   25
+   F   28
+   G   30
+   H   35
+   I   40
+   J   44
+   K   45
+   L   50
+   M   55
+   N   60
+   O   65
+   P   70
+   Q   75
+   R   80
+   S   90
+   T  100
+   U  106
+   V  118
+   W  150
+   X  200
+   Y  250
+   Z  320
+
+
+
+
+THE SYMBOL TABLE DESCRIBED IN THIS FILE CONTAINS THE SIZES AND SHAPES 
+NECESSARY TO PLOT ALL THE DEFAULT PAD SHAPES,TEXT SIZES,TRACK SIZES AND 
+OUTLINE WIDTH CODES.THIS FILE ASSUMES YOU HAVE THE FACILITY TO PLOT ALL
+THESE SYMBOLS,OTHERWISE THE SYMBOL TABLE WILL HAVE TO BE EDITED TO SUIT
+YOUR OWN PARTICULAR PHOTOHEAD OR IMAGE PROCESSING REQUIREMENTS.
+
