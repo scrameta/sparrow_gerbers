@@ -1,6 +1,0 @@
-M48
-; Corrected from legacy headerless Excellon
-; Units: inches; coordinate format: 2.3; leading zero suppression
-INCH,LZ
-%
-M30
