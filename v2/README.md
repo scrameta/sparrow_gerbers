@@ -11,9 +11,15 @@ There were some spurious 1 mil lines. These were removed/cleaned up using the re
 
 ## The plane layers (L2 PWR, L5 GND)
 
-These were originally available as two layers each. When doing the conversion the second layer that provides trace boards was missed. This has been recreated using v4 as a reference.
+These were originally available as two layers each. When doing the conversion these two were incorrectly combined.
+
+The pads part of these were recreated using CADSTAR -> Altium -> Kicad -> gerber.
+The clearance part was then recreated using both v4 and the corrupt combination. It was not available after the CADSTAR -> Altium step.
+The two were then combined properly
 
 ## The bottom silkscreen
 
-After the conversion the bottom silkscreen was a copy of the top silkscreen file. The v4 file has been used with a few corrections to match better.
+After the conversion the bottom silkscreen was a copy of the top silkscreen file. 
+
+The file was recreated using CADSTAR -> Altium -> Kicad -> gerber.
 
