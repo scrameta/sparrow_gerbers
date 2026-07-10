@@ -1,5 +1,6 @@
-rm -rf pngs web gerbers/layers.json
-pcbnets gerber ./gerbers -o ./pngs --dpi 1000
-pcbnets render ./pngs -o web --scale 1.0  --no-auto-invert
+rm -rf svgs web gerbers/layers.json
+pcbnets gerber ./gerbers -o ./svgs --dpi 1000
+pcbnets nets ./svgs -o nets --no-auto-invert 
+pcbnets render ./svgs --nets nets -o web --scale 1.0  --no-auto-invert
 pcbnets deploy ./web -o falcon_viewer.zip --prefix falcon
 pcbnets serve ./web
