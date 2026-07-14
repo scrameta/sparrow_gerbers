@@ -58,6 +58,7 @@ G04 Positive composite: solid flood, then clearances (LPC), then pads/traces (LP
 %ADD60C,0.04*%
 %ADD61C,0.015*%
 %ADD62C,0.011*%
+%ADD63R,0.425X0.075*%
 G01*
 G04 Pass 1: plane flood over the original photoplot frame*
 %LPD*%
@@ -79480,7 +79481,6 @@ D44*
 
 
 %LPD*%
-%ADD63R,0.425X0.075*%
 D37*
 D38*
 D38*
